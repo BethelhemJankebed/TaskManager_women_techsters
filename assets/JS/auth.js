@@ -38,7 +38,7 @@
         }
         const user = { name, email, password };
         localStorage.setItem("tm_user", JSON.stringify(user));
-        window.location.href = "/dashboard/dashboad.html";
+        window.location.href = "/dashboad.html";
       } else {
         const raw = localStorage.getItem("tm_user");
         if (!raw) {
@@ -48,7 +48,7 @@
         try {
           const u = JSON.parse(raw);
           if (u.email === email && u.password === password) {
-            window.location.href = "/dashboard/dashboad.html";
+            window.location.href = "/dashboad.html";
           } else alert("Invalid credentials");
         } catch (e) {
           alert("Invalid user data");
