@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Tasks — Task Manager</title>
+    <link rel="stylesheet" href="/assets/CSS/reset.css" />
+    <link rel="stylesheet" href="tasks.css" />
+  </head>
+  <body>
+    <section class="tasks-page">
+      <header class="tasks-header">
+        <div class="tasks-title">
+          <div class="task-icon">✓</div>
+          <div>
+            <h2>Task Management</h2>
+            <p class="muted">Manage and track your tasks</p>
+          </div>
+        </div>
+        <div class="tasks-actions">
+          <div class="tabs">
+            <button class="tab-btn active">My Tasks</button>
+            <button class="tab-btn">AI Summary</button>
+          </div>
+          <a href="dashboad.html" class="btn ghost">Back</a>
+        </div>
+      </header>
+
+      <div class="tasks-layout">
+        <main class="tasks-section">
+          <div class="tasks-section__header">
+            <h3>All Tasks</h3>
+            <p class="muted">Manage and review all tasks</p>
+          </div>
+          <div class="tasks-actions-bar">
+            <button id="addTaskBtn" class="btn primary">+ Add Task</button>
+          </div>
+
+          <div class="tasks-list task-list-body">
+            <!-- JS populates tasks here -->
+          </div>
+        </main>
+
+        <!-- Community moved to its own page: see community.html -->
+      </div>
+    </section>
+
+    <script src="tasks.js"></script>
+  </body>
+</html>
