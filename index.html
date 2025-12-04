@@ -75,9 +75,28 @@
       </section>
     </main>
 
+    <link rel="stylesheet" href="/assets/CSS/auth.css" />
     <script type="module" src="/components/button/button.js"></script>
     <script type="module" src="/components/input-box/input-box.js"></script>
     <script type="module" src="/components/copyright/copyright.js"></script>
     <script type="module" src="/assets/JS/main.js"></script>
+    <script src="/assets/JS/auth.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        document
+          .querySelectorAll(".content__card__select__button")
+          .forEach((b) => {
+            b.style.border = "0";
+            b.style.background = "transparent";
+          });
+        const active = document.querySelector(
+          ".content__card__select__button.active"
+        );
+        if (active) {
+          active.style.background = "#fff";
+          active.style.boxShadow = "0 8px 20px rgba(16,24,40,0.06)";
+        }
+      });
+    </script>
   </body>
 </html>

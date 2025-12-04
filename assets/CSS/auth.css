@@ -1,0 +1,180 @@
+
+:root {
+  --card-width: 560px;
+  --muted: #6b7280;
+  --accent: #f59e0b;
+}
+body {
+  font-family: Poppins, Inter, system-ui, Segoe UI, Arial;
+  background: #f7fafc;
+}
+.body__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 16px;
+}
+.content__card {
+  width: var(--card-width);
+  background: #fff;
+  border-radius: 12px;
+  padding: 40px 44px;
+  box-shadow: 0 24px 60px rgba(16, 24, 40, 0.08);
+  position: relative;
+}
+.content__card__logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+.content__card__logo__container {
+  width: 88px;
+  height: 88px;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(180deg, #2b6bff, #1e50ff);
+  position: relative;
+}
+.content__card__logo__container svg {
+  width: 44px;
+  height: 44px;
+  color: #fff;
+  fill: none;
+  stroke: #fff;
+}
+.content__card__logo__container::after {
+  content: "";
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #fbbf24;
+  border: 3px solid #fff;
+  position: absolute;
+  right: -6px;
+  top: -6px;
+  box-shadow: 0 6px 18px rgba(251, 191, 36, 0.18);
+}
+.content__card__title {
+  font-size: 32px;
+  text-align: center;
+  margin: 0 0 6px;
+}
+.content__card__description {
+  text-align: center;
+  color: var(--muted);
+  margin-bottom: 18px;
+}
+.content__card__select {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin: 18px 0;
+  background: #f3f4f6;
+  padding: 8px;
+  border-radius: 14px;
+}
+.content__card__select__button {
+  width: 46%;
+  border-radius: 12px;
+  padding: 10px 0;
+  background: transparent;
+  border-radius: 10px;
+}
+.content__card__select__button.active {
+  background: #fff;
+  box-shadow: 0 8px 20px rgba(16, 24, 40, 0.06);
+}
+.content__card__userinput {
+  margin-top: 8px;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.auth-row {
+  display: flex;
+  gap: 12px;
+}
+.auth-field label {
+  font-weight: 600;
+  color: #374151;
+  font-size: 13px;
+}
+.input-with-icon {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #cbd5e1;
+  border-radius: 12px;
+  padding: 12px;
+}
+.input-with-icon .icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #64748b;
+}
+.input-with-icon input {
+  border: 0;
+  background: transparent;
+  padding: 8px 6px;
+  outline: none;
+  font-size: 14px;
+  color: #0b1a2b;
+  width: 100%;
+}
+
+.auth-field input {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 12px;
+  border: 1px solid #e6eef8;
+  background: #eef2f7;
+}
+.auth-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 8px;
+}
+.btn-help {
+  background: #fff;
+  border: 1px solid #e6eef8;
+  padding: 12px 18px;
+  border-radius: 12px;
+  color: #374151;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.btn-next {
+  background: linear-gradient(180deg, #f59e0b, #f59e0b);
+  color: #111;
+  padding: 12px 18px;
+  border-radius: 12px;
+  border: none;
+  box-shadow: 0 14px 40px rgba(245, 158, 11, 0.18);
+  min-width: 160px;
+}
+
+.muted {
+  color: var(--muted);
+}
+
+/* responsive */
+@media (max-width: 600px) {
+  :root {
+    --card-width: 92vw;
+  }
+  .content__card {
+    padding: 24px;
+  }
+}
