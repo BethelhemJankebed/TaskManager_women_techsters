@@ -77,3 +77,59 @@ body {
   background: linear-gradient(180deg, #fbfdff, #f8fafc);
   border-style: dashed;
 }
+
+/* Modal (local to community page) */
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 1200;
+}
+.modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(3, 7, 18, 0.45);
+}
+.modal-panel {
+  position: relative;
+  max-width: 520px;
+  margin: 80px auto;
+  background: #fff;
+  border-radius: 12px;
+  padding: 22px;
+  box-shadow: 0 30px 80px rgba(16, 24, 40, 0.2);
+  z-index: 10;
+}
+.modal-panel h3 {
+  margin: 0 0 12px;
+}
+.modal-panel label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+.modal-panel input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #e6eef8;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+.btn.primary {
+  background: linear-gradient(180deg, #2b6bff, #1e50ff);
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 10px;
+  border: 0;
+}
+.btn.ghost {
+  background: #fff;
+  border: 1px solid #e6eef8;
+  padding: 8px 12px;
+  border-radius: 10px;
+}

@@ -3,11 +3,50 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Summary Page</title>
-    <link rel="stylesheet" href="/assets/CSS/reset.css" />
-    <link rel="stylesheet" href="dashboard.css" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./dashboard/dashboard.css" />
   </head>
   <body>
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-top">
+        <div class="brand">
+          <div class="brand-icon">✓</div>
+          <div class="brand-name">TaskMaster</div>
+        </div>
+
+        <div class="profile">
+          <div class="avatar">J</div>
+          <div class="profile-info">
+            <div class="profile-name">John Doe</div>
+            <div class="profile-email">hello@gmail.com</div>
+          </div>
+        </div>
+
+        <nav class="nav-list">
+          <a href="dashboad.html" class="nav-btn active"
+            ><span class="nav-icon">▦</span> Dashboard</a
+          >
+          <a href="./tasks/tasks.html" class="nav-btn"
+            ><span class="nav-icon">✓</span> Tasks</a
+          >
+          <a href="./community/community.html" class="nav-btn"
+            ><span class="nav-icon">👥</span> Community</a
+          >
+          <a href="#" class="nav-btn"
+            ><span class="nav-icon">$</span> Expenses</a
+          >
+          <a href="#" class="nav-btn"><span class="nav-icon">📄</span> Notes</a>
+          <a href="#" class="nav-btn"
+            ><span class="nav-icon">⚙</span> Settings</a
+          >
+        </nav>
+      </div>
+
+      <div class="sidebar-bottom">
+        <a href="#" id="logoutBtn" class="nav-logout">⟲ Logout</a>
+      </div>
+    </aside>
     <section class="summary-page">
       <div class="summary-heading">
         <h1 class="user-greeting">

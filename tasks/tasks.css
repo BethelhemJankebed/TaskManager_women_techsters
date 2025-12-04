@@ -145,3 +145,22 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
+/* Shared button styles (kept local to tasks page) */
+.btn{display:inline-flex;align-items:center;gap:8px;padding:8px 12px;border-radius:8px;border:0;cursor:pointer;font-weight:600}
+.btn.primary{background:linear-gradient(180deg,#2b6bff,#1e50ff);color:#fff}
+.btn.ghost{background:#fff;border:1px solid #e6eef8;color:#0b1a2b}
+
+/* Modal styles (for Add Task) */
+.modal{display:none;position:fixed;inset:0;z-index:1200}
+.modal-backdrop{position:absolute;inset:0;background:rgba(3,7,18,0.45)}
+.modal-panel{position:relative;max-width:520px;margin:80px auto;background:#fff;border-radius:12px;padding:22px;box-shadow:0 30px 80px rgba(16,24,40,0.2);z-index:10}
+.modal-panel h3{margin:0 0 12px}
+.modal-panel label{display:block;font-weight:600;margin-bottom:6px}
+.modal-panel input[type="text"]{width:100%;padding:10px;border:1px solid #e6eef8;border-radius:8px;margin-bottom:12px}
+.modal-actions{display:flex;justify-content:flex-end;gap:8px}
+
+/* Small polish */
+.task-item{transition:transform 140ms ease,box-shadow 140ms ease}
+.task-item:hover{transform:translateY(-4px);box-shadow:0 12px 30px rgba(16,24,40,0.06)}
+
