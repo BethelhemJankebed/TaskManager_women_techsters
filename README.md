@@ -16,4 +16,4 @@ Notes & next steps
 - This is a static recreation (no backend). It aims to match the visual structure and layout from your reference images.
 - If you want closer pixel-perfect visuals, provide the exact brand assets (logo, SVG shapes) and I can refine colors, spacing, and shadows further.
 
-Enjoy — open `Dahboard.html` to preview.
+Enjoy — open `Index.html` to preview.
